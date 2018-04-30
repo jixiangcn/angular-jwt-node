@@ -34,7 +34,7 @@ npm run server
 默认情况下，服务器会监听 http://localhost:8081 
 你可以使用 Postman 进行测试：
 
-####1. 将用户注册的 json 数据:
+#### 1. 将用户注册的 json 数据:
 ```
 {username:'lilei',password:'!123#456'}
 ``` 
@@ -44,7 +44,7 @@ http://localhost:8081/register
 ```
 使用返回的 token 可以用来访问数据，注意：为了测试 token 的过期状态，默认生成的 token 一分钟过期。
 
-####2. 将用户登录的 json 数据:
+#### 2. 将用户登录的 json 数据:
 ```
 {username:'lilei',password:'!123#456'}
 ``` 
@@ -54,7 +54,7 @@ http://localhost:8081/login
 ```
 使用返回的 token 可以用来访问数据。
 
-####3. 使用 token 访问数据
+#### 3. 使用 token 访问数据
 在Postman中使用 GET 方法，将 Authorization 中的Bearer Token 设置为得到的 token 值
 URL：
 ```
