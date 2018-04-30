@@ -1,12 +1,12 @@
 # angular-jwt-node 
-JWT(Json Web Token) authentication implementated with Angular and Nodejs.
-[中文版](README.zh_CN.md)
+JWT(Json Web Token) 认证方式的 Angular 和 Nodejs 实例
+[English](README.md)
 
-Note: Server is works now, angular client coming soon.
+注意: 服务器可正常使用，angular 客户端稍后更新上来.
 
-##Quick Start
+##使用说明
 
-### 1.Install Mongodb:
+### 1.安装 Mongodb:
 示例中使用 mongodb 请在你的系统中安装 mongodb。
 并建立一个名为 jwt 的数据库。
 
