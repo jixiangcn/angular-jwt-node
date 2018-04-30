@@ -60,5 +60,5 @@ URL：
 ```
 http://localhost:8081/me
 ```
-使用返回的 token 可以用来访问数据。
+
 
