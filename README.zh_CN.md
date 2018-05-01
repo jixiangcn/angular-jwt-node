@@ -27,7 +27,7 @@ const config = {
 npm install
 ```
 
-### 3.启动服务器
+### 3. 启动 API 服务器
 ```
 npm run server
 ```
@@ -60,5 +60,9 @@ URL：
 ```
 http://localhost:8081/me
 ```
-
+### 3. 启动 web 服务
+```
+npm run web
+```
+使用浏览器访问： http://localhost:4200
 
