@@ -4,7 +4,7 @@ JWT(Json Web Token) authentication implementated with Angular and Nodejs.
 
 Note: Server is works now, angular client coming soon.
 
-##Quick Start
+## Quick Start
 
 ### 1.Install Mongodb:
 This sample need mongodb to save user data, install mongodb first, then create a "jwt" colletion.
