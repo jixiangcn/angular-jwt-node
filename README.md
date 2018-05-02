@@ -1,64 +1,68 @@
 # angular-jwt-node 
 JWT(Json Web Token) authentication implementated with Angular and Nodejs.
-[中文版](README.zh_CN.md)
+[中文说明](README.zh_CN.md)
 
 Note: Server is works now, angular client coming soon.
 
-##Quick Start
+## Quick Start
 
 ### 1.Install Mongodb:
-示例中使用 mongodb 请在你的系统中安装 mongodb。
-并建立一个名为 jwt 的数据库。
-
-如果你已经有了正在运行的 mongodb 服务，请修改 server.js 文件中：
+This sample need mongodb to save user data, install mongodb first, then create a "jwt" colletion.
+If you already have a running mongodb, change the configuration in server.js：
 ```
 const config = {
     mongodbConnString: 'mongodb://localhost/jwt',
     ...
 };
 ```
-将 mongodbConnString 更改为适合的值。
 
-
-
-### 2.下载示例
-下载示例，解压到文件夹中，在文件夹中运行：
+### 2.Get the code
+Download or clone the code, in project folder run:
 ```
 npm install
 ```
 
-### 3.启动服务器
+### 3.Start the API server
 ```
 npm run server
 ```
-默认情况下，服务器会监听 http://localhost:8081 
-你可以使用 Postman 进行测试：
+Default setting api server will listen on port 8081 
 
-#### 1. 将用户注册的 json 数据:
+### 4. Use Postman test api server：
+
+#### 4.1. Register a user
+POST the register data in json to api server:
 ```
 {username:'lilei',password:'!123#456'}
 ``` 
-POST 到：
+API URL:
 ```
 http://localhost:8081/register
 ```
-使用返回的 token 可以用来访问数据，注意：为了测试 token 的过期状态，默认生成的 token 一分钟过期。
+The token returned can be used to access the data. 
+Note: For testing the expiration of the token, the default token expires in one minute.
 
-#### 2. 将用户登录的 json 数据:
+#### 4.2. Sign In 
+POST the login data in json to api server:
 ```
 {username:'lilei',password:'!123#456'}
 ``` 
-POST 到：
+API URL:
 ```
 http://localhost:8081/login
 ```
-使用返回的 token 可以用来访问数据。
+The token returned can be used to access the data.
 
-#### 3. 使用 token 访问数据
-在Postman中使用 GET 方法，将 Authorization 中的Bearer Token 设置为得到的 token 值
-URL：
+#### 4.3. Access Data
+Using the GET method in the Postman, set value of the Authorization Bearer Token to the token you got from server.
+
+API URL：
 ```
 http://localhost:8081/me
 ```
-
+### 3.Start the web client
+```
+npm run web
+```
+Use browser access http://localhost:4200
 
