@@ -33,6 +33,8 @@ export class AccessComponent implements OnInit {
         this.http.get('http://localhost:8081/me', this.httpOptions)
             .subscribe(data => {
                 this.result = data;
+            }, error => {
+                this.result = error;
             });
     }
 
