@@ -96,7 +96,7 @@ server.post('/login', function (req, res) {
                         } else {
                             res.status(200).json({
                                 info: "user token is updated successfully！",
-                                token: usr.token
+                                token: user.token
                             });
                         }
                     });
