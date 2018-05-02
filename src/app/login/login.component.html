@@ -15,7 +15,7 @@
                         </div>
                         <div class="uk-form-row">
                             <a class="uk-width-1-1 uk-button uk-button-primary uk-button-large"
-                               (click)="submitSignInData()">Sign In</a>
+                               (click)="submitSignInData(user)">Sign In</a>
                         </div>
                     </div>
                 </div>
@@ -32,6 +32,10 @@
                 <h3>Response from server</h3>
                 <code style="white-space: normal;word-wrap: break-word;">
                     {{response|json}}
+                </code>
+                <h3>LocalStorage</h3>
+                <code style="white-space: normal;word-wrap: break-word;">
+                    {{localStorage|json}}
                 </code>
             </div>
         </div>

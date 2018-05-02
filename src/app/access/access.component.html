@@ -1,3 +1,32 @@
-<p>
-  access works!
-</p>
+<div class="uk-grid">
+    <div class="uk-width-4-10">
+        <div class="uk-block uk-block-primary">
+            <div class="uk-vertical-align uk-text-center uk-height-1-1 ">
+                <div class="uk-vertical-align-middle">
+                    <h2 class="uk-text-primary">Access Data</h2>
+                    <a class="uk-width-1-1 uk-button uk-button-second uk-button-large"
+                       (click)="loadData()">Load Data</a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-width-6-10">
+        <div class="uk-block uk-block-muted">
+            <div class="uk-container">
+                <h3>Post the json of user to http://api_server/me :</h3>
+                <h3>httpOptions</h3>
+                <code style="white-space: normal;word-wrap: break-word;">
+                    {{httpOptions|json}}
+                </code>
+                <h3>Result</h3>
+                <code style="white-space: normal;word-wrap: break-word;">
+                    {{result|json}}
+                </code>
+            </div>
+        </div>
+    </div>
+</div>
+
+
