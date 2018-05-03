@@ -2,8 +2,6 @@
 JWT(Json Web Token) authentication implementated with Angular and Nodejs.
 [中文说明](README.zh_CN.md)
 
-Note: Server is works now, angular client coming soon.
-
 ## Quick Start
 
 ### 1.Install Mongodb:
