@@ -2,8 +2,6 @@
 JWT(Json Web Token) 认证方式的 Angular 和 Nodejs 实例
 [English](README.md)
 
-注意: 服务器可正常使用，angular 客户端稍后更新上来.
-
 ##使用说明
 
 ### 1.安装 Mongodb:
