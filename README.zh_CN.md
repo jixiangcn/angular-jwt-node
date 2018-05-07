@@ -1,4 +1,4 @@
-# angular-jwt-node 
+# Angular-JWT-Nodejs 
 JWT(Json Web Token) 认证方式的 Angular 和 Nodejs 实例
 [English](README.md)
 
